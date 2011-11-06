@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>example</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+						<h1>example</h1>
+<div class="listing">
+<div class="src-code"><ol><li><div class="src-line"><span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line"><span class="src-inc">require_once</span><span class="src-sym">(</span><span class="src-str">'Whm/Whm.php'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line"><span class="src-var">$config</span><span class="src-sym">[</span><span class="src-str">'username'</span><span class="src-sym">]&nbsp;</span>=&nbsp;<span class="src-str">'yourwhmusername'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><span class="src-var">$config</span><span class="src-sym">[</span><span class="src-str">'hash'</span><span class="src-sym">]&nbsp;</span>=&nbsp;<span class="src-str">&quot;yourhash&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><span class="src-var">$config</span><span class="src-sym">[</span><span class="src-str">'host'</span><span class="src-sym">]&nbsp;</span>=&nbsp;<span class="src-str">'yourserver.com'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line"><span class="src-comm">//Get&nbsp;an&nbsp;instance&nbsp;of&nbsp;the&nbsp;Account&nbsp;Functions&nbsp;API</span></div></li>
+<li><div class="src-line"><span class="src-var">$whmAccountFunctions&nbsp;</span>=&nbsp;<span class="src-id"><a href="../whm-lib/Whm.html">Whm</a></span><span class="src-sym">::</span><a href="../whm-lib/Whm.html#methodgetInstance">getInstance</a><span class="src-sym">(</span><span class="src-str">'Account'</span><span class="src-sym">,&nbsp;</span><span class="src-var">$config</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><span class="src-comm">//Get&nbsp;A&nbsp;list&nbsp;of&nbsp;Accounts</span></div></li>
+<li><div class="src-line"><span class="src-var">$response&nbsp;</span>=&nbsp;<span class="src-var">$whmAccountFunctions</span><span class="src-sym">-&gt;</span><span class="src-id">listaccts</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><span class="src-comm">//Echo&nbsp;a&nbsp;list&nbsp;of&nbsp;accounts&nbsp;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line"><span class="src-key">foreach&nbsp;</span><span class="src-sym">(</span><span class="src-var">$response</span><span class="src-sym">-&gt;</span><span class="src-id">acct&nbsp;</span><span class="src-key">as&nbsp;</span><span class="src-var">$account</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-var">$account</span><span class="src-sym">-&gt;</span><span class="src-id">domain</span>.<span class="src-str">&quot;\n&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><span class="src-sym">}</span></div></li>
+</ol></div>
+</div>
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 06 Nov 2011 23:33:12 +1100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</body>
+</html>
