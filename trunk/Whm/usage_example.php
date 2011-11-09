@@ -1,6 +1,6 @@
 <?php
 
-require_once('Whm/Whm.php');
+require_once('Whm.php');
 
 $config['username'] = 'yourwhmusername';
 $config['hash'] = "yourhash";
